@@ -43,13 +43,13 @@ public class LoginDaoImpl implements LoginDAO{
 		return (Users) criteria.uniqueResult();
 	}
 	
-	  public void addCookie(String name, String value, int maxAge) {
+	public void addCookie(String name, String value, int maxAge) {
 	        ExternalContext externalContext = FacesContext.getCurrentInstance().getExternalContext();
 	        HttpServletResponse response = (HttpServletResponse) externalContext.getResponse();
 	        Cookie cookie = new Cookie(name, value);
 	        cookie.setMaxAge(maxAge);
 	        response.addCookie(cookie);
-	    }
+	}
 	
 	@Override 
 	public String authenticate(Users user) {

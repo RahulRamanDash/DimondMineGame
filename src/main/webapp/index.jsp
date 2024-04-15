@@ -380,16 +380,17 @@
 
                     if(bombPositionValue == itemId) {
                     	
-/*                     	effect2.currentTime = 0;
+						effect2.currentTime = 0;
 	                	effect2.play();
 
 	                	setTimeout(function() {
 		                	effect2.pause();
 	                    }, 3080); 
-*/
+/*
 
 	                    effect3.currentTime = 0;
 	                	effect3.play();
+*/
 	                    
                         $("td").each(function() {
                             if ($(this).css('background-color') != 'rgba(0, 0, 0, 0.43)') {
